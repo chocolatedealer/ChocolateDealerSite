@@ -1,8 +1,7 @@
 import React from "react";
 import "./index.css";
 import {
-    BrowserRouter as Router,
-    Link
+    BrowserRouter as Router
 } from "react-router-dom";
 
 
