@@ -1,27 +1,58 @@
 import React, { Component } from "react";
-import MainImage from "../../images/placeholder1.png"
+import Header from "../../components/header";
+import MainImage from "../../images/KSIK6223.JPG"
+import MainImage2 from "../../images/CURIOUS2.JPG"
 import './home.css'
+import MainVid from "./HomeVid.mp4"
 
 class Home extends Component {
    
   render() {
     return (
       <div>
-          <div className="Background" />
+        <Header />
+        <div className="Background" />
         <div className="MainParent">
-            <h1>My Chocolate Dealer</h1>
-            <div className="MainGroup">
-                <img src={MainImage} alt="ProductImage"/>
-                <div className="MainTextGroup">
-                    <h2>Premium Chocolate</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, 
-    pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. 
-    Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, 
-    in pretium orci vestibulum eget.</p>
-                    <a href="/">Buy Now!</a>
-                </div>
+          {/* <h1>CHOCOLATE DEALER</h1> */}
+          <video autoplay controls>
+            <source src={MainVid} type="video/mp4" ></source>
+          </video>
+          <div className="TwoColumns">
+            <img src={ MainImage } alt="ProductImage"/>
+            <div className="MainTextGroup" id="Dark">
+              <h2>Premium Chocolate</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, 
+                  pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. 
+                  Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, 
+                  in pretium orci vestibulum eget.</p>
+              <a href="/">Buy Now!</a>
             </div>
+          </div>
+          <div className="TwoColumns">
+            <div className="MainTextGroup" id="Milk">
+              <h2>Premium Chocolate</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, 
+                  pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. 
+                  Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, 
+                  in pretium orci vestibulum eget.</p>
+              <a href="/">Buy Now!</a>
+            </div>
+            <img src={ MainImage2 } alt="ProductImage"/>
+          </div>
+          <h1>Refills</h1>
+          <div className="ThreeColumns">
+            <img src={ MainImage2 } alt="ProductImage"/>
+            <img src={ MainImage2 } alt="ProductImage"/>
+            <img src={ MainImage2 } alt="ProductImage"/>
+          </div>
+          <footer>
+            <p>Contact Email: Blah@gmail.com</p>
+            <p>Sign Up For Our Newsletter</p>
+            <p>Customer Serice Information</p>
+            <p>Special Orders / Gifts</p>
+          </footer>
         </div>
+
       </div>
     );
   }

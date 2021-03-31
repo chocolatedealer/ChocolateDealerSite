@@ -1,26 +1,69 @@
+@keyframes SlideUpAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
 .Background {
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 50%;
+  width: 100%;
   height: 100%;
-  background-color: #eabeb0;
+  background-color: #250606;
   z-index: -1;
 }
-.MainGroup {
-  display: flex;
+
+video {
+  width: 100%;
+}
+
+.TwoColumns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   margin: auto;
   max-width: 1300px;
+  padding: 20px 40px;
 }
-.MainGroup img {
+.ThreeColumns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: auto;
-  max-width: 50vw;
+  max-width: 1300px;
+  padding: 20px 40px;
 }
+/* .MainParent h1 {
+  letter-spacing: 10px;
+  animation: SlideUpAnimation 5s 1.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  opacity: 0;
+} */
+.TwoColumns img {
+  margin: auto;
+  max-width: 500px;
+}
+.ThreeColumns img {
+  margin: auto;
+  max-width: 400px;
+}
+
 .MainTextGroup {
   margin: auto;
   max-width: 500px;
 }
-
+.MainTextGroup h2 {
+  font-size: 40px;
+}
 .MainTextGroup p {
+  letter-spacing: 3px;
   padding-bottom: 20px;
+  font-size: 15px;
+}
+footer p {
+  padding-left: 300px;
+  text-align: left;
 }
