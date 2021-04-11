@@ -51,19 +51,19 @@ class Home extends Component {
               <img src={ MainImage2 } alt="ProductImage"/>
               <p1>Dark Chocolate <br/>$40</p1>
               <br/>
-              <a>Buy Now</a>
+              <a href="/">Buy Now</a>
             </div>
             <div className="Refill">
               <img src={ MainImage2 } alt="ProductImage"/>
               <p1>Milk Chocolate <br/>$40</p1>
               <br/>
-              <a>Buy Now</a>
+              <a href="/">Buy Now</a>
             </div>
             <div className="Refill">
               <img src={ MainImage2 } alt="ProductImage"/>
               <p1>White Chocolate <br/>$40</p1>
               <br/>
-              <a>Buy Now</a>
+              <a href="/">Buy Now</a>
             </div>
           </div>
           <footer>
