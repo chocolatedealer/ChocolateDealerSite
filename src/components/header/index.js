@@ -31,10 +31,12 @@ class Header extends React.Component {
   render() {
     return (
         <Router>
+          
             <div
                 className={this.state.hasScrolled ? "Header HeaderScrolled" : "Header"}
                 data-cursor="-color-white"
             >
+              <div className="HeaderLogo">Chocolate Dealer</div>
                 <div className="HeaderGroup">
                     <a className="headerDark"  href="/#Dark">Shop Dark</a>
                     <a className="headerMilk" href="/#Milk">Shop Milk</a>

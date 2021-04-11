@@ -1,22 +1,37 @@
 .Header {
   position: fixed;
   width: 100%;
-  padding: 35px 0;
+  padding: 15px 0;
   z-index: 100;
-  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
   text-decoration: none;
   background-color: #250606;
 }
 
 .HeaderScrolled {
   background-color: none;
-  padding: 1px 0;
+  padding: 10px 0;
+}
+
+.HeaderScrolled .HeaderGroup {
+  transform: translateY(-50%);
+  opacity: 0;
+  margin-bottom: -40px;
   /* backdrop-filter: blur(20px); */
 }
+
 .HeaderScrolled a {
   background-color: #ffad86;
 }
 
+.HeaderLogo {
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+}
+.HeaderScrolled .HeaderLogo {
+  margin-top: 10px;
+}
 .HeaderGroup {
   width: 100vw;
   max-width: 800px;
@@ -25,6 +40,7 @@
   grid-template-columns: repeat(4, auto);
   align-items: center;
   justify-items: center;
+  transition: 0.8s ease;
 }
 
 .Header a {

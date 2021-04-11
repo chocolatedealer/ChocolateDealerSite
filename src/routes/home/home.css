@@ -23,7 +23,29 @@ video {
   width: 100%;
 }
 
+.HeroImgs {
+  width: 100%;
+}
+.Banner {
+  width: 100%;
+}
+.Dinner {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  z-index: 2;
+  margin-left: 0;
+  width: 30%;
+}
+
 .TwoColumns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  margin: auto;
+  max-width: 1300px;
+  padding: 20px 40px;
+}
+.TwoColumnsFirst {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   margin: auto;
@@ -37,11 +59,37 @@ video {
   max-width: 1300px;
   padding: 20px 40px;
 }
+
+.Refill img {
+  padding: 10px;
+  border-bottom: 3px solid transparent;
+  transition: 0.5s ease-in-out;
+}
+.Refill img:hover {
+  border-bottom: 3px solid white;
+}
+
+.Refill a {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  color: #ffad86;
+  transition: 0.5s ease-in-out;
+}
+
+.Refill a:hover {
+  border-bottom: 3px solid white;
+}
 /* .MainParent h1 {
   letter-spacing: 10px;
   animation: SlideUpAnimation 5s 1.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
   opacity: 0;
 } */
+.TwoColumnsFirst img {
+  margin: auto;
+  max-width: 500px;
+  opacity: 0;
+}
 .TwoColumns img {
   margin: auto;
   max-width: 500px;

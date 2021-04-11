@@ -3,7 +3,9 @@ import Header from "../../components/header";
 import MainImage from "../../images/KSIK6223.JPG"
 import MainImage2 from "../../images/CURIOUS2.JPG"
 import './home.css'
-import MainVid from "./HomeVid.mp4"
+import Dinner from "../../images/Dinner.jpg"
+import Banner from "../../images/WideBanner.jpg"
+// import MainVid from "./HomeVid.mp4"
 
 class Home extends Component {
    
@@ -14,10 +16,14 @@ class Home extends Component {
         <div className="Background" />
         <div className="MainParent">
           {/* <h1>CHOCOLATE DEALER</h1> */}
-          <video autoplay controls>
+          {/* <video autoplay controls>
             <source src={MainVid} type="video/mp4" ></source>
-          </video>
-          <div className="TwoColumns">
+          </video> */}
+          <div className="HeroImgs">
+            <img src={ Banner } className="Banner" alt="ProductImage"/>
+            <img src={ Dinner } className="Dinner" alt="ProductImage"/>
+          </div>
+          <div className="TwoColumnsFirst">
             <img src={ MainImage } alt="ProductImage"/>
             <div className="MainTextGroup" id="Dark">
               <h2>Premium Chocolate</h2>
@@ -41,9 +47,24 @@ class Home extends Component {
           </div>
           <h1>Refills</h1>
           <div className="ThreeColumns">
-            <img src={ MainImage2 } alt="ProductImage"/>
-            <img src={ MainImage2 } alt="ProductImage"/>
-            <img src={ MainImage2 } alt="ProductImage"/>
+            <div className="Refill">
+              <img src={ MainImage2 } alt="ProductImage"/>
+              <p1>Dark Chocolate <br/>$40</p1>
+              <br/>
+              <a>Buy Now</a>
+            </div>
+            <div className="Refill">
+              <img src={ MainImage2 } alt="ProductImage"/>
+              <p1>Milk Chocolate <br/>$40</p1>
+              <br/>
+              <a>Buy Now</a>
+            </div>
+            <div className="Refill">
+              <img src={ MainImage2 } alt="ProductImage"/>
+              <p1>White Chocolate <br/>$40</p1>
+              <br/>
+              <a>Buy Now</a>
+            </div>
           </div>
           <footer>
             <p>Contact Email: Blah@gmail.com</p>

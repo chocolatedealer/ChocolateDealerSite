@@ -21,7 +21,8 @@ h2 {
   font-size: 40px;
   color: #ffad86;
 }
-p {
+p,
+p1 {
   font-size: 20px;
   color: #ffad86;
   font-weight: 500;
