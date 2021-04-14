@@ -67,6 +67,6 @@
     display: none;
   }
   .HeaderGroup {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, auto-fit);
   }
 }
