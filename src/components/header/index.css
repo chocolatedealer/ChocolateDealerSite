@@ -26,7 +26,7 @@
 
 .HeaderLogo {
   font-size: 30px;
-  color: white;
+  color: #ffad86;
   font-weight: 700;
 }
 .HeaderScrolled .HeaderLogo {
@@ -45,7 +45,7 @@
 
 .Header a {
   margin: auto;
-  color: white;
+  color: #ffad86;
   font-weight: 300;
   font-size: 20px;
   text-decoration: none;

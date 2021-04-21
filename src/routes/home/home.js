@@ -3,9 +3,10 @@ import Header from "../../components/header";
 import MainImage from "../../images/KSIK6223.JPG"
 import MainImage2 from "../../images/CURIOUS2.JPG"
 import './home.css'
+import Dough from "../../images/dough.jpg"
 import Dinner from "../../images/Dinner.jpg"
 import Banner from "../../images/WideBanner.jpg"
-// import MainVid from "./HomeVid.mp4"
+import MainVid from "./HomeVid.gif"
 
 class Home extends Component {
    
@@ -16,9 +17,12 @@ class Home extends Component {
         <div className="Background" />
         <div className="MainParent">
           {/* <h1>CHOCOLATE DEALER</h1> */}
-          {/* <video autoplay controls>
-            <source src={MainVid} type="video/mp4" ></source>
-          </video> */}
+          <div className="VidContainer">
+            <img src={ MainVid } alt="Main Video"></img>
+            {/* <video autoplay controls>
+              <source src={MainVid} type="video/mp4" ></source>
+            </video> */}
+          </div>
           <div className="HeroImgs">
             <img src={ Banner } className="Banner" alt="ProductImage"/>
             <img src={ Dinner } className="Dinner" alt="ProductImage"/>
@@ -44,6 +48,10 @@ class Home extends Component {
               <a href="/">Buy Now!</a>
             </div>
             <img src={ MainImage2 } alt="ProductImage"/>
+          </div>
+          <div className="UnevenColumns">
+            <img src={ MainImage } alt="EyeImg" />
+            <img src={ Dough } alt="DoughImg" />
           </div>
           <h1>Refills</h1>
           <div className="ThreeColumns">

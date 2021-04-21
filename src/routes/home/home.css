@@ -19,7 +19,16 @@
   z-index: -1;
 }
 
-video {
+.VidContainer {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  height: 100vh;
+}
+
+.VidContainer img {
+  object-fit: cover;
+  justify-content: center;
   width: 100%;
 }
 
@@ -31,7 +40,7 @@ video {
 }
 .Dinner {
   position: absolute;
-  top: 200px;
+  top: calc(200px + 100vh);
   left: 200px;
   z-index: 2;
   margin-left: 0;
@@ -51,6 +60,25 @@ video {
   margin: auto;
   max-width: 1300px;
   padding: 20px 40px;
+}
+
+.UnevenColumns {
+  display: grid;
+  grid-template-columns: minmax(400px, 5fr) minmax(400px, 1fr);
+  margin: 10% 0;
+}
+
+.UnevenColumns img {
+  width: 90%;
+  margin: auto;
+}
+.UnevenColumns img:nth-child(1) {
+  max-height: 500px;
+  object-fit: cover;
+  width: 90%;
+}
+.UnevenColumns img:nth-child(2) {
+  margin-right: 300px;
 }
 .ThreeColumns {
   display: grid;
@@ -117,15 +145,21 @@ footer p {
 
 @media (max-width: 450px) {
   .Banner {
-    margin-top: 150px;
+    margin-top: 0;
     height: 200px;
     max-width: 100%;
     object-fit: cover;
     overflow: hidden;
   }
   .Dinner {
-    top: 250px;
+    top: calc(480px);
     left: 60px;
+  }
+  .VidContainer {
+    height: 100%;
+  }
+  .VidContainer img {
+    margin-top: 100px;
   }
   h1 {
     font-size: 18px;
@@ -143,5 +177,23 @@ footer p {
   }
   .TwoColumnsFirst img {
     display: none;
+  }
+  .UnevenColumns {
+    grid-template-columns: repeat(auto-fit, 300px);
+    margin: auto;
+    justify-content: center;
+  }
+
+  .UnevenColumns img {
+    max-width: 300px;
+    margin: auto;
+  }
+  .UnevenColumns img:nth-child(1) {
+    max-height: 500px;
+    padding: auto;
+  }
+  .UnevenColumns img:nth-child(2) {
+    margin-right: auto;
+    padding: 20px;
   }
 }
